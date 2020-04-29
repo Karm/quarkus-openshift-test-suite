@@ -19,11 +19,11 @@
     <dependencies>
         <dependency>
             <groupId>io.quarkus.ts.openshift</groupId>
-            <artifactId>jms-app</artifactId>
+            <artifactId>jms-app-dummy</artifactId>
         </dependency>
         <dependency>
             <groupId>io.quarkus.ts.openshift</groupId>
-            <artifactId>jms-app</artifactId>
+            <artifactId>jms-app-dummy</artifactId>
             <classifier>tests</classifier>
             <scope>test</scope>
         </dependency>
@@ -48,7 +48,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
     <build>
         <plugins>
             <plugin>

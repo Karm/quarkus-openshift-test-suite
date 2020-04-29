@@ -1,4 +1,4 @@
-package io.quarkus.ts.openshift.sqldb;
+package io.quarkus.ts.openshift.jms;
 
 import io.quarkus.test.common.QuarkusTestResourceLifecycleManager;
 import org.apache.activemq.artemis.core.server.embedded.EmbeddedActiveMQ;

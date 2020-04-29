@@ -11,10 +11,10 @@
         <relativePath>../..</relativePath>
     </parent>
 
-    <artifactId>jms-app</artifactId>
+    <artifactId>jms-app-dummy</artifactId>
     <packaging>jar</packaging>
 
-    <name>Quarkus OpenShift TS: JMS: Application</name>
+    <name>Quarkus OpenShift TS: JMS: Dummy Application</name>
 
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -64,29 +64,15 @@
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-artemis-jms</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.quarkus</groupId>
             <artifactId>quarkus-resteasy</artifactId>
         </dependency>
-
-<dependency>
+        <!--<dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-smallrye-health</artifactId>
-        </dependency>
-
+        </dependency>-->
         <dependency>
-            <groupId>org.apache.activemq</groupId>
-            <artifactId>artemis-server</artifactId>
-            <version>2.10.0</version>
-            <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.jboss.logmanager</groupId>
-                    <artifactId>jboss-logmanager</artifactId>
-                </exclusion>
-            </exclusions>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-artemis-jms</artifactId>
         </dependency>
     </dependencies>
 

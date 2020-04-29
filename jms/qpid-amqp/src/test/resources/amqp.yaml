@@ -107,7 +107,7 @@ spec:
             - name: AMQ_TRANSPORTS
               value: "amqp"
             - name: AMQ_QUEUES
-              value: "foo/prices,quarkus/foo/prices"
+              value: "foo/prices,quarkus/foo/prices,prices"
             - name: AMQ_TOPICS
               value: "work-queue/worker-updates"
             - name: MQ_SERIALIZABLE_PACKAGES
@@ -124,3 +124,18 @@ spec:
               value: "1 gb"
             - name: AMQ_QUEUE_MEMORY_LIMIT
               value: ""
+---
+apiVersion: "route.openshift.io/v1"
+kind: "Route"
+metadata:
+  labels:
+    app.kubernetes.io/name: "work-queue-broker-amq-mesh"
+  name: "work-queue-broker-amq-mesh"
+spec:
+  host: ""
+  path: "/"
+  port:
+    targetPort: 61616
+  to:
+    kind: "Service"
+    name: "work-queue-broker-amq-mesh"

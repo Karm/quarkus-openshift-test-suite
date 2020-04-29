@@ -1,4 +1,4 @@
-package io.quarkus.ts.openshift.sqldb;
+package io.quarkus.ts.openshift.jms;
 
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.MethodOrderer;
@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
-import static io.restassured.RestAssured.when;
 import static org.hamcrest.text.MatchesPattern.matchesPattern;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)

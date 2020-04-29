@@ -19,6 +19,7 @@
         <module>http</module>
         <module>configmap</module>
         <module>jms/app</module>
+        <module>jms/app-dummy</module>
         <module>jms/qpid-amqp</module>
         <module>sql-db/app</module>
         <module>sql-db/postgresql</module>
@@ -98,6 +99,19 @@
             <dependency>
                 <groupId>io.quarkus.ts.openshift</groupId>
                 <artifactId>jms-app</artifactId>
+                <version>${project.version}</version>
+                <classifier>tests</classifier>
+            </dependency>
+
+
+            <dependency>
+                <groupId>io.quarkus.ts.openshift</groupId>
+                <artifactId>jms-app-dummy</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.quarkus.ts.openshift</groupId>
+                <artifactId>jms-app-dummy</artifactId>
                 <version>${project.version}</version>
                 <classifier>tests</classifier>
             </dependency>
