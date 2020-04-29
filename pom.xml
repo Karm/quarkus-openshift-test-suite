@@ -19,8 +19,7 @@
         <module>http</module>
         <module>configmap</module>
         <module>jms/app</module>
-        <module>jms/app-dummy</module>
-        <module>jms/qpid-amqp</module>
+        <module>jms/artemis</module>
         <module>sql-db/app</module>
         <module>sql-db/postgresql</module>
         <module>sql-db/mysql</module>
@@ -53,10 +52,6 @@
         <version.maven-jar-plugin>3.2.0</version.maven-jar-plugin>
         <version.maven-surefire-plugin>2.22.1</version.maven-surefire-plugin>
         <version.quarkus>1.3.2.Final</version.quarkus>
-
-        <quarkus-plugin.version>1.3.2.Final</quarkus-plugin.version>
-        <quarkus.platform.version>1.3.2.Final</quarkus.platform.version>
-
     </properties>
 
     <dependencyManagement>
