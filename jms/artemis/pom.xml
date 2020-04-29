@@ -11,20 +11,20 @@
         <relativePath>../..</relativePath>
     </parent>
 
-    <artifactId>jms-qpid-amqp</artifactId>
+    <artifactId>jms-artemis</artifactId>
     <packaging>jar</packaging>
 
-    <name>Quarkus OpenShift TS: JMS: Qpid JMS AMQP</name>
+    <name>Quarkus OpenShift TS: JMS: Artemis</name>
 
     <dependencies>
         <dependency>
             <groupId>io.quarkus.ts.openshift</groupId>
-            <artifactId>jms-app-dummy</artifactId>
+            <artifactId>jms-app</artifactId>
         </dependency>
+
         <dependency>
-            <groupId>io.quarkus.ts.openshift</groupId>
-            <artifactId>jms-app-dummy</artifactId>
-            <classifier>tests</classifier>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-junit5</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -33,8 +33,9 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-junit5</artifactId>
+            <groupId>io.quarkus.ts.openshift</groupId>
+            <artifactId>jms-app</artifactId>
+            <classifier>tests</classifier>
             <scope>test</scope>
         </dependency>
         <dependency>
