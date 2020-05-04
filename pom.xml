@@ -18,7 +18,6 @@
 
         <module>http</module>
         <module>configmap</module>
-        <module>jms/app</module>
         <module>jms/artemis</module>
         <module>sql-db/app</module>
         <module>sql-db/postgresql</module>

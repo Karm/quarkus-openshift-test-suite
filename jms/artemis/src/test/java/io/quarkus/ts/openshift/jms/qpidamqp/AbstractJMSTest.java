@@ -1,4 +1,4 @@
-package io.quarkus.ts.openshift.jms;
+package io.quarkus.ts.openshift.jms.qpidamqp;
 
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;

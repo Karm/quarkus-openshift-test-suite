@@ -1,4 +1,4 @@
-package io.quarkus.ts.openshift.jms;
+package io.quarkus.ts.openshift.jms.qpidamqp;
 
 import io.quarkus.test.common.QuarkusTestResource;
 import io.quarkus.test.junit.QuarkusTest;
